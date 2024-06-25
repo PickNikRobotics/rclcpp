@@ -25,7 +25,7 @@
 #include <vector>
 
 #include "rcl/guard_condition.h"
-#include "rclcpp_action/graph.h"
+#include "rcl_action/graph.h"
 
 #include "rclcpp/event.hpp"
 #include "rclcpp/macros.hpp"
