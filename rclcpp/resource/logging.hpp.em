@@ -123,6 +123,7 @@ def get_rclcpp_suffix_from_features(features):
 , ...@
 @[ end if]@
 ) \
+  /* LCOV_EXCL_START */ \
   do { \
     static_assert( \
       ::std::is_same<typename std::remove_cv<typename std::remove_reference<decltype(logger)>::type>::type, \
@@ -155,8 +156,8 @@ def get_rclcpp_suffix_from_features(features):
 @[ else]@
       "%s", rclcpp_stream_ss_.str().c_str()); \
 @[ end if]@
-  } while (0)
-
+  } while (0) \
+/* LCOV_EXCL_STOP */
 @[ end for]@
 #endif
 ///@@}
